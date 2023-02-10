@@ -1,0 +1,216 @@
+.advantages {
+    background: $black;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+        min-height: 768px;
+    }
+
+    @include mobile {
+        min-height: 610px;
+    }
+
+    .advantages__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        padding: 100px 0;
+
+        @include tablet {
+            flex-direction: column;
+            padding: 48px 0 64px 0;
+            align-items: center;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            padding: 48px 0 81px 0;
+            align-items: center;
+        }
+    }
+
+    .advantages__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        @include tablet {
+            margin-bottom: 48px;
+        }
+
+        @include mobile {
+            margin-bottom: 48px;
+        }
+    }
+
+    .advantages__image {
+        margin: 0 0 20px 0;
+        height: 32px;
+        width: auto;
+    }
+
+    .advantages__title {
+        @include font(20px, 24px);
+        color: $snow-white;
+        text-align: center;
+        margin: 0 0 16px 0;
+    }
+
+    .advantages__subtitle {
+        @include font(14px, 17px, 300);
+        color: $snow-white;
+        text-align: center;
+    }
+}
+
+.subscription {
+    min-height: 450px;
+    background: url(../img/index/footer/subscription.png);
+    background-size: cover;
+
+    .subscription__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 150px 0;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            padding: 64px 0 140px;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            padding: 64px 0 100px;
+        }
+    }
+
+    .subscription__intersect {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        min-height: 225px;
+
+        .subscription__img {
+            margin: 0 0 30px 0;
+        }
+        .subscription__text {
+            @include font(20px, 24px, 400);
+            text-align: center;
+        }
+    }
+
+    .subscription__subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        min-height: 145px;
+    }
+
+    .subscription__title {
+        display: block;
+        @include font(24px, 40px, 700);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .subscription__subtitle {
+        display: block;
+        @include font(18px, 30px);
+        margin-bottom: 32px;
+    }
+
+    .subscription__form {
+        display: flex;
+        min-height: 50px;
+        width: 100%;
+
+        .button {
+            width: 35%;
+            border-radius: 0 60px 60px 0;
+
+            &:hover {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+            &:active {
+                opacity: 1;
+            }
+        }
+
+        .input {
+            width: 65%;
+            height: 100%;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 60px 0 0 60px;
+            color: #222224;
+            background-color: $light-gray;
+            @include font(14px, 17px);
+            &:focus {
+                outline: none;
+                border: none;
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: #222224;
+    justify-content: center;
+    min-width: 80px;
+
+    .copyright__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .copyright__text {
+            @include font(16px, 19px);
+            color: $snow-white;
+        }
+
+        .connection__list {
+            display: flex;
+            justify-content: space-between;
+            margin: 24px 0;
+
+            .connection__item {
+                display: flex;
+                width: 32px;
+                height: 32px;
+                background-color: $white;
+                justify-content: center;
+                align-items: center;
+                margin-left: 8px;
+            }
+
+            .connection__item:hover {
+                background-color: $purplish-pink;
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+            .connection__item:active {
+                opacity: 1;
+            }
+
+            .connection__link:focus .connection__item {
+                background-color: $purplish-pink;
+            }
+
+            .instagram__image {
+                fill: $black;
+            }
+        }
+    }
+}

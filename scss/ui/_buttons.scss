@@ -1,0 +1,91 @@
+.button {
+    text-align: center;
+    max-width: 300px;
+    min-height: 48px;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    background-color: $purplish-pink;
+    color: $white;
+    @include font(14px, 17px, 400);
+    padding: 7px;
+    text-transform: capitalize;
+
+    &:hover {
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+.button_red {
+    max-width: 275px;
+    background-color: $purplish-pink;
+    color: $white;
+    padding: 15px 40px;
+
+    &:hover {
+        background-color: $white;
+        color: $purplish-pink;
+    }
+}
+
+.button_white {
+    border: 1px solid $carmine-pink;
+    background-color: white;
+    @include font(16px, 19px);
+    color: $pink-crayola;
+
+    &:hover {
+        background-color: $pink-crayola;
+        color: $white;
+    }
+}
+
+.button_grey {
+    max-width: 150px;
+    @include font(11px, 13px, 300);
+    border: $agate-gray solid 1px;
+    color: $agate-gray;
+    padding: 10px 15px;
+    background-color: $snow-white;
+
+    &:hover {
+        opacity: 0.8;
+        color: $purplish-pink;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
+
+.button_uppercase {
+    text-transform: uppercase;
+}
+
+.button_transparent {
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        background-color: $purplish-pink;
+        color: $white;
+    }
+
+    &:active {
+        opacity: 1;
+    }
+}
+
+.button_arrow {
+    position: relative;
+
+    &:after {
+        content: '';
+        background-image: url(../img/registration/arrow.svg);
+        position: absolute;
+        width: 17px;
+        height: 10px;
+
+        top: 50%;
+        transform: translate(50%, -50%);
+    }
+}

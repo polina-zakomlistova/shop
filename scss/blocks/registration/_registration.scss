@@ -1,0 +1,55 @@
+.registration-area {
+    margin-top: 64px;
+    margin-bottom: 96px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @include mobile {
+            justify-content: center;
+        }
+    }
+}
+
+.registration {
+    width: 47%;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__legend {
+        @include font(16px, 19px, 300);
+        color: $black;
+        margin-bottom: 20px;
+    }
+
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__radio {
+        flex-direction: row;
+        @include font(11px, 13px, 300);
+        color: $black;
+        margin-bottom: 33px;
+    }
+
+    &__password-text {
+        @include font(13px, 16px, 300);
+        color: $agate-gray;
+        margin-bottom: 40px;
+    }
+}

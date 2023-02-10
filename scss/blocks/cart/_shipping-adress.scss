@@ -1,0 +1,25 @@
+.shipping-adress {
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 57px;
+    }
+
+    &__legend {
+        margin: 0 0 20px;
+        text-transform: uppercase;
+    }
+
+    &__input {
+        height: 100%;
+        border: 1 px solid #a4a4a4;
+        padding-left: 17px;
+        margin-bottom: 20px;
+        @include font(13px, 16px, 300);
+        color: $black;
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
+    }
+}

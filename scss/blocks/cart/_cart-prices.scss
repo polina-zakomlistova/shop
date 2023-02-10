@@ -1,0 +1,42 @@
+.cart-prices {
+    width: 360px;
+    min-height: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 43px;
+    box-sizing: border-box;
+    background-color: $smoky-white;
+
+    &__sub-total-price {
+        display: flex;
+        @include font(11px, 13px);
+        text-transform: uppercase;
+        color: $basalt-grey;
+        min-width: 170px;
+        margin: 0 0 12px;
+    }
+
+    &__total-price {
+        display: flex;
+        @include font(16px, 19px, 300);
+        text-transform: uppercase;
+        color: $basalt-grey;
+    }
+    &__input_mini {
+        border: none;
+        margin-left: 20px;
+        max-width: 100px;
+    }
+    &__input {
+        @include font(16px, 19px, 700);
+        color: $purplish-pink;
+        border: none;
+        margin-left: 20px;
+        max-width: 100px;
+    }
+
+    .total-price__hr {
+        margin: 21px 0 15px;
+    }
+}

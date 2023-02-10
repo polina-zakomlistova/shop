@@ -1,0 +1,26 @@
+.input {
+    height: 45px;
+    border: 1 px solid #a4a4a4;
+    padding-left: 17px;
+    margin-bottom: 20px;
+    @include font(13px, 16px, 300);
+    color: $black;
+
+    &:focus {
+        outline: 3px solid $ardent-pink;
+        border: $ardent-pink;
+    }
+
+    &::placeholder {
+        color: #cbcbcb;
+    }
+}
+
+.input-radio {
+    margin: 0 5px 0 0;
+}
+
+.input-radio-label {
+    margin: 0 10px 0 0;
+    @include font(11px, 13px, 300);
+}

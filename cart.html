@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__controls">
+                        <a class="header__logo-link" href="index.html"
+                            ><img
+                                class="header__logo-link"
+                                width="44"
+                                height="38"
+                                src="img/index/header/logo.svg"
+                                alt="logo"
+                        /></a>
+                        <a class="header__loupe-link" href="">
+                            <img class="header__icons-link" width="27"
+                            height="28" src="img/index/header/loupe.svg"
+                            alt="loupe"
+                        </a>
+                    </div>
+                    <div class="header__controls">
+                        <button class="header__button-menu">
+                            <img class="header__icons-link" width="32"
+                            height="23" src="img/index/header/menu.svg"
+                            alt="menu"
+                        </button>
+                        <a class="header__person-link" href="registration.html">
+                            <img class="header__icons-link" width="29"
+                            height="29" src="img/index/header/person.svg"
+                            alt="person"
+                        </a>
+                        <a class="header__cart-link" href="cart.html">
+                            <img class="header__icons-link" width="32"
+                            height="29" src="img/index/header/cart.svg"
+                            alt="cart"
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <h2 class="navigation__title">Men</h2>
+                        <ul>
+                            <li class="type-product__item">
+                                <a href="#">link</a>accessories
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>bags
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>denim
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>t-shirts
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__item">
+                        <h2 class="navigation__title">Women</h2>
+                        <ul class="type-product__list">
+                            <li class="type-product__list">
+                                <a href="#">link</a>accessories
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>jackets & coats
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>polos
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>t-shirts
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>shirts
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__item">
+                        <h2 class="navigation__title">Kids</h2>
+                        <ul class="type-product__list">
+                            <li class="type-product__item">
+                                <a href="#">link</a>accessories
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>jackets & coats
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>polos
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>t-shirts
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>shirts
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>bags
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="top top--cart">
+                <h1 class="top__title">Shopping cart</h1>
+            </section>
+            <section class="cart">
+                <h2 class="visually-hidden">cart</h2>
+                <div class="container">
+                    <div class="cart__wrapper">
+						<div class="products-cart">
+							<ul class="products-cart__list">
+								<li class="products-cart__item">
+									<img class="products-cart__img" src="img/cart/cart-foto1.png" width="262" height="306" alt="foto"
+									/>
+									<div class="haracteristics">
+										<h2 class="haracteristics__title">MANGO  PEOPLE  T-SHIRT
+										</h2>
+
+										<ul
+											class="haracteristics__list"
+										>
+											<li
+												class="haracteristics__item"
+											>
+												<label for="price"
+													>Price:</label
+												>
+												<input
+													class="haracteristics__input haracteristics__input--price"
+													type="text"
+													name="price"
+													value="$300"
+													disabled
+												/>
+											</li>
+											<li
+												class="haracteristics__item"
+											>
+												<label for="color"
+													>Color:</label
+												>
+												<input
+													class="haracteristics__input"
+													type="text"
+													name="color"
+													value="red"
+													disabled
+												/>
+											</li>
+
+											<li
+												class="haracteristics__item"
+											>
+												<label for="size"
+													>Size:</label
+												>
+												<input
+													class="haracteristics__input"
+													type="text"
+													name="size"
+													value="XL"
+													disabled
+												/>
+											</li>
+
+											<li
+												class="haracteristics__item"
+											>
+												<label for="quantity"
+													>Quantity:</label
+												>
+												<input
+													class="haracteristics__input haracteristics__input--quantity"
+													type="number"
+													name="quantity"
+													value="1"
+												/>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="products-cart__item">
+									<img class="products-cart__img" src="img/cart/cart-foto1.png" width="262" height="306" alt="foto"
+									/>
+									<div class="haracteristics">
+										<h2 class="haracteristics__title">MANGO  PEOPLE  T-SHIRT
+										</h2>
+
+										<ul
+											class="haracteristics__list"
+										>
+											<li
+												class="haracteristics__item"
+											>
+												<label for="price"
+													>Price:</label
+												>
+												<input
+													class="haracteristics__input haracteristics__input--price"
+													type="text"
+													name="price"
+													value="$300"
+													disabled
+												/>
+											</li>
+											<li
+												class="haracteristics__item"
+											>
+												<label for="color"
+													>Color:</label
+												>
+												<input
+													class="haracteristics__input"
+													type="text"
+													name="color"
+													value="red"
+													disabled
+												/>
+											</li>
+											<li
+												class="haracteristics__item"
+											>
+												<label for="size"
+													>Size:</label
+												>
+												<input
+													class="haracteristics__input"
+													type="text"
+													name="size"
+													value="XL"
+													disabled
+												/>
+											</li>
+											<li
+												class="haracteristics__item"
+											>
+												<label for="quantity"
+													>Quantity:</label
+												>
+												<input
+													class="haracteristics__input haracteristics__input--quantity"
+													type="number"
+													name="quantity"
+													value="1"
+												/>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="products-cart__item">
+									<img class="products-cart__img" src="img/cart/cart-foto1.png" width="262" height="306" alt="foto"
+									/>
+									<div class="haracteristics">
+										<h2 class="haracteristics__title">MANGO  PEOPLE  T-SHIRT
+										</h2>
+
+										<ul
+											class="haracteristics__list"
+										>
+											<li
+												class="haracteristics__item"
+											>
+												<label for="price"
+													>Price:</label
+												>
+												<input
+													class="haracteristics__input haracteristics__input--price"
+													type="text"
+													name="price"
+													value="$300"
+													disabled
+												/>
+											</li>
+											<li
+												class="haracteristics__item"
+											>
+												<label for="color"
+													>Color:</label
+												>
+												<input
+													class="haracteristics__input"
+													type="text"
+													name="color"
+													value="red"
+													disabled
+												/>
+											</li>
+
+											<li
+												class="haracteristics__item"
+											>
+												<label for="size"
+													>Size:</label
+												>
+												<input
+													class="haracteristics__input"
+													type="text"
+													name="size"
+													value="XL"
+													disabled
+												/>
+											</li>
+
+											<li
+												class="haracteristics__item"
+											>
+												<label for="quantity"
+													>Quantity:</label
+												>
+												<input
+													class="haracteristics__input haracteristics__input--quantity"
+													type="number"
+													name="quantity"
+													value="1"
+												/>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<div class="button-cart__wrapper">
+								<button class="button button_grey button_uppercase">
+									Clear shopping cart
+								</button>
+								<a
+									class="button button_grey button_uppercase"
+									href="catalog.html"
+									>Continue shopping</a
+								>
+							</div>
+						</div>
+                        <div class="cart-information">
+                            <div class="shipping-adress">
+                                <form class="shipping-adress__form" action="#">
+                                    <fieldset class="shipping-adress__fieldset">
+                                        <legend class="shipping-adress__legend">
+                                            shipping adress
+                                        </legend>
+                                        <input
+                                            class="input"
+                                            type="text"
+                                            placeholder="Bangladesh"
+                                        />
+                                        <input
+                                            class="input"
+                                            type="text"
+                                            placeholder="State"
+                                        />
+                                        <input
+                                            class="input"
+                                            type="text"
+                                            placeholder="Postcode/ Zip"
+                                        />
+                                        <button
+                                            class="button button_uppercase button_grey"
+                                            type="submit"
+                                        >
+                                            get a quote
+                                        </button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="cart-prices">
+                                    <div class="cart-prices__sub-total-price">
+                                        <label
+                                            class="cart-prices__label_mini"
+                                            for="sub-total"
+                                            >Sub total:</label
+                                        >
+                                        <input
+                                            class="cart-prices__input_mini"
+                                            type="text"
+                                            name="sub-total"
+                                            value="$900"
+                                            disabled
+                                        />
+                                    </div>
+                                    <div class="cart-prices__total-price">
+                                        <label
+                                            class="cart-prices__label"
+                                            for="grand-total"
+                                            >Grand total:</label
+                                        >
+                                        <input
+                                            class="cart-prices__input"
+                                            type="text"
+                                            name="grand-total"
+                                            value="$900"
+                                            disabled
+                                        />
+                                    </div>
+
+                                    <hr class="total-price__hr" />
+                                    <a class="button button_red button_transparent button_uppercase" href="#"
+                                        >Proceed to checkout</a
+                                    >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+        <section class="advantages">
+            <div class="container">
+                <h2 class="visually-hidden">advantages</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <img class="advantages__image" src="img/index/footer/delivery.svg" alt="delivery" width="45" height="32">
+                        <h3 class="advantages__title">Free Delivery</h3>
+                        <p class="advantages__subtitle">Worldwide delivery on all. authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__image" src="img/index/footer/discount.png" alt="discount" width="40" height="40">
+                        <h3 class="advantages__title">Sales & discounts</h3>
+                        <p class="advantages__subtitle">Worldwide delivery on all. authorit tively morph next-generation innov tion with extensive models.Worldwide delivery on all authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__image" src="img/index/footer/quality.png" alt="quality assurance" width="47"
+                            height="35">
+                        <h3 class="advantages__title">Quality assurance</h3>
+                        <p class="advantages__subtitle">Worldwide delivery on all. authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="subscription">
+            <div class="container">
+                <div class="subscription__wrap">
+                    <h2 class="visually-hidden">subscription</h2>
+                    <div class="subscription__intersect">
+                        <img class="subscription__img" src="img/index/footer/intersect.png" alt="intersect" width="96" height="96">
+                        <div  class="subscription__text">“vestibulum quis porttitor dui! quisque viverra nunc mi, a pulvinar purus condimentum“</div>
+                    </div>
+
+                    <div class="subscription__subscribe">
+                        <h3 class="subscription__title">subscribe <span class="subscription__subtitle">for our new letter and promotion</span></h3>
+                        <form class="subscription__form">
+                            <input class="input" type="email" placeholder="Enter Your Email">
+                            <button class="button" type="button">
+                                <span class="before-submit">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="container">
+                <h2 class="visually-hidden">copyright</h2>
+                <div class="copyright__wrap">
+                    <p class="copyright__text">© 2021 brand all rights reserved.</p>
+                    <ul class="connection__list">
+                        <li class="connection__item">
+                            <a href="#">
+                                <img src="img/index/footer/facebook.svg"> 
+                            </a>    
+                        </li>
+                        <li class="connection__item">
+                            <a href="#">
+                                <img src="img/index/footer/instagram.svg">
+                            </a>
+                        </li>
+                        <li class="connection__item">
+                            <a href="#">
+                                <img src="img/index/footer/pinterest.svg">
+                            </a>
+                        </li>
+                        <li class="connection__item">
+                            <a href="#">
+                                <img src="img/index/footer/twitter.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+        <script src="js/catalog.js"></script>
+    </body>
+</htcal>

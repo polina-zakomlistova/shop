@@ -1,0 +1,68 @@
+.advantages-of-registration {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    min-height: 334px;
+
+    @include mobile {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    &__title {
+        @include font(24px, 29px, 300);
+        color: $black;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+
+        @include mobile {
+            @include font(16px, 19px, 300);
+        }
+    }
+
+    &__subtitle {
+        @include font(24px, 29px, 300);
+        color: $black;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        text-transform: none;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+
+        @include mobile {
+            @include font(16px, 19px, 300);
+        }
+    }
+
+    &__item {
+        @include font(24px, 29px, 300);
+        color: $black;
+        margin-bottom: 16px;
+        margin-left: 25px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/registration/check-mark.svg);
+            width: 20px;
+            height: 16px;
+            top: 50%;
+            left: -20px;
+            transform: translate(-50%, -50%);
+        }
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+
+        @include mobile {
+            @include font(16px, 19px, 300);
+        }
+    }
+}

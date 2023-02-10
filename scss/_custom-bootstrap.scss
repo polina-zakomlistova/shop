@@ -1,0 +1,64 @@
+.page-item:last-child .page-link {
+    color: $black;
+}
+
+.page-item:first-child .page-link {
+    color: $black;
+}
+
+.page-link {
+    color: $aluminum;
+    background-color: $snow-white;
+
+    &:hover {
+        color: $carmine-pink;
+    }
+    &:active {
+        border: 1px $carmine-pink solid;
+    }
+
+    &:focus {
+        border: 1px $carmine-pink solid;
+        box-shadow: none;
+        color: $carmine-pink;
+        background-color: $snow-white;
+    }
+}
+
+.breadcrumb {
+    margin: 0;
+}
+
+.breadcrumb-item a {
+    color: $aluminum;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include font(14px, 17px, 700);
+}
+
+.breadcrumb-item.active {
+    text-transform: uppercase;
+    color: $carmine-pink;
+    @include font(14px, 17px, 700);
+}
+
+.slide {
+    width: 100%;
+    height: 500px;
+
+    .carousel-img,
+    .carousel-item,
+    .carousel-inner {
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 120%;
+        background-color: $aluminum;
+        z-index: -1;
+    }
+}

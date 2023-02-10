@@ -1,0 +1,32 @@
+@import './reset';
+@import './fonts';
+@import './variables';
+@import './mixins';
+@import './general';
+
+@import '../bootstrap/bootstrap.min.css';
+@import './custom-bootstrap';
+
+@import './ui/buttons';
+@import './ui/inputs';
+
+@import './blocks/index/header';
+@import './blocks/index/brand';
+@import './blocks/index/offers';
+@import './blocks/index/products';
+@import './blocks/index/footer';
+
+@import './blocks/registration/registration';
+@import './blocks/registration/advantages-of-registration';
+
+@import './blocks/cart/products-in-cart';
+@import './blocks/cart/cart-information';
+@import './blocks/cart/shipping-adress';
+@import './blocks/cart/cart-prices';
+
+@import './blocks/catalog/filters';
+@import './blocks/catalog/catalog_grid';
+@import './blocks/catalog/padinator';
+
+@import './blocks/product/product-description';
+@import './blocks/product/carousel';

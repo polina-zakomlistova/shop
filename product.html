@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <title>document</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__controls">
+                        <a class="header__logo-link" href="index.html"
+                            ><img
+                                class="header__logo-link"
+                                width="44"
+                                height="38"
+                                src="img/index/header/logo.svg"
+                                alt="logo"
+                        /></a>
+                        <a class="header__loupe-link" href="">
+                            <img class="header__icons-link" width="27"
+                            height="28" src="img/index/header/loupe.svg"
+                            alt="loupe"
+                        </a>
+                    </div>
+                    <div class="header__controls">
+                        <button class="header__button-menu">
+                            <img class="header__icons-link" width="32"
+                            height="23" src="img/index/header/menu.svg"
+                            alt="menu"
+                        </button>
+                        <a class="header__person-link" href="registration.html">
+                            <img class="header__icons-link" width="29"
+                            height="29" src="img/index/header/person.svg"
+                            alt="person"
+                        </a>
+                        <a class="header__cart-link" href="cart.html">
+                            <img class="header__icons-link" width="32"
+                            height="29" src="img/index/header/cart.svg"
+                            alt="cart"
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <h2 class="navigation__title">Men</h2>
+                        <ul>
+                            <li class="type-product__item">
+                                <a href="#">link</a>accessories
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>bags
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>denim
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>t-shirts
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__item">
+                        <h2 class="navigation__title">Women</h2>
+                        <ul class="type-product__list">
+                            <li class="type-product__list">
+                                <a href="#">link</a>accessories
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>jackets & coats
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>polos
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>t-shirts
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>shirts
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__item">
+                        <h2 class="navigation__title">Kids</h2>
+                        <ul class="type-product__list">
+                            <li class="type-product__item">
+                                <a href="#">link</a>accessories
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>jackets & coats
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>polos
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>t-shirts
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>shirts
+                            </li>
+                            <li class="type-product__item">
+                                <a href="#">link</a>bags
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="top top_breadcrumb">
+                <div class="container">
+                    <div class="top__wrapper">
+                        <h1 class="top__title">New arrivals</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="catalog.html">Men</a>
+                                </li>
+                                <li
+                                    class="breadcrumb-item active"
+                                    aria-current="page"
+                                >
+                                    New arrivals
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section class="slider">
+                <div id="carousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block carousel-img" src="img/product/foto1.png" class="d-block" alt="foto 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block carousel-img" src="img/product/foto2.png" class="d-block" alt="foto 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block carousel-img" src="img/product/foto3.png" class="d-block" alt="foto 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section class="product-description">
+                <div class="container">
+                    <div class="product-description__wrapper">
+                        <h3 class="product-description__title">
+                            Women collection
+                        </h3>
+                        <h3 class="product-description__subtitle">Moschino cheap and chic</h3>
+                        <p class="product-description__description">
+                            Compellingly actualize fully researched processes
+                            before proactive outsourcing. Progressively
+                            syndicate collaborative architectures before
+                            cutting-edge services. Completely visualize parallel
+                            core competencies rather than exceptional portals.
+                        </p>
+                        <p class="product-description__price">$560.00</p>
+                        <hr class="hr" />
+                        <div class="filters">
+                            <div class="filters__wrapper">
+                                <ul class="filters__list">
+                                    <div
+                                        class="filters__item filters__item_size"
+                                    >
+                                        <button
+                                            type="button"
+                                            class="filters__button"
+                                        >
+                                            Choose size
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="filters__item filters__item_color"
+                                    >
+                                        <button
+                                            type="button"
+                                            class="filters__button filters__button_color"
+                                        >
+                                            Choose color
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="filters__item filters__item_quantity"
+                                    >
+                                        <button
+                                            type="button"
+                                            class="filters__button"
+                                        >
+                                            Quantity
+                                        </button>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="button button_white">
+                            Add to cart
+                    </div>
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="container">
+                    <ul class="products__list products__list_grid">
+                        <li class="products__item products__item_grid">
+                            <div class="products__img-wrapper">
+                                <img
+                                    class="products__img"
+                                    src="img/index/catalog/foto1.png"
+                                    alt="foto1"
+                                    width="360"
+                                    height="420"
+                                />
+                                <div class="products__img-lay">
+                                    <a class="products__link" href="#">
+                                        <div class="products__cart-link">
+                                            <img
+                                                src="img/index/catalog/Add-to-Cart.png"
+                                                alt=""
+                                            />
+                                            <div class="products__text-link">
+                                                Add to cart
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products__information">
+                                <h3 class="products__title">
+                                    Ellery x m'o capsule
+                                </h3>
+                                <p class="products__description">
+                                    Known for her sculptural takes on
+                                    traditional tailoring,australian arbiter of
+                                    cool kym ellery teams up with moda
+                                    operandi.Known for her sculptural takes on
+                                    traditional tailoring, australian arbiter of
+                                    cool kym ellery teams up with moda operandi
+                                    moda operandmoda operandmoda operandmoda
+                                    operandmoda operandmoda operandmoda operand
+                                </p>
+                                <p class="price">$52.00</p>
+                            </div>
+                        </li>
+                        <li class="products__item products__item_grid">
+                            <div class="products__img-wrapper">
+                                <img
+                                    class="products__img"
+                                    src="img/index/catalog/foto2.png"
+                                    alt="foto1"
+                                    width="360"
+                                    height="420"
+                                />
+                                <div class="products__img-lay">
+                                    <a class="products__link" href="#">
+                                        <div class="products__cart-link">
+                                            <img
+                                                src="img/index/catalog/Add-to-Cart.png"
+                                                alt=""
+                                            />
+                                            <div class="products__text-link">
+                                                Add to cart
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products__information">
+                                <h3 class="products__title">
+                                    Ellery x m'o capsule
+                                </h3>
+                                <p class="products__description">
+                                    Known for her sculptural takes on
+                                    traditional tailoring,australian arbiter of
+                                    cool kym ellery teams up with moda operandi.
+                                </p>
+                                <p class="price">$52.00</p>
+                            </div>
+                        </li>
+                        <li class="products__item products__item_grid">
+                            <div class="products__img-wrapper">
+                                <img
+                                    class="products__img"
+                                    src="img/index/catalog/foto3.png"
+                                    alt="foto1"
+                                    width="360"
+                                    height="420"
+                                />
+                                <div class="products__img-lay">
+                                    <a class="products__link" href="#">
+                                        <div class="products__cart-link">
+                                            <img
+                                                src="img/index/catalog/Add-to-Cart.png"
+                                                alt=""
+                                            />
+                                            <div class="products__text-link">
+                                                Add to cart
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="products__information">
+                                <h3 class="products__title">
+                                    Ellery x m'o capsule
+                                </h3>
+                                <p class="products__description">
+                                    Known for her sculptural takes on
+                                    traditional tailoring,australian arbiter of
+                                    cool kym ellery teams up with moda operandi.
+                                </p>
+                                <p class="price">$52.00</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <section class="advantages">
+                <div class="container">
+                    <h2 class="visually-hidden">advantages</h2>
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <img
+                                class="advantages__image"
+                                src="img/index/footer/delivery.svg"
+                                alt="delivery"
+                                width="45"
+                                height="32"
+                            />
+                            <h3 class="advantages__title">Free Delivery</h3>
+                            <p class="advantages__subtitle">
+                                Worldwide delivery on all. authorit tively morph
+                                next-generation innov tion with extensive
+                                models.
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <img
+                                class="advantages__image"
+                                src="img/index/footer/discount.png"
+                                alt="discount"
+                                width="40"
+                                height="40"
+                            />
+                            <h3 class="advantages__title">Sales & discounts</h3>
+                            <p class="advantages__subtitle">
+                                Worldwide delivery on all. authorit tively morph
+                                next-generation innov tion with extensive
+                                models.Worldwide delivery on all authorit tively
+                                morph next-generation innov tion with extensive
+                                models.
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <img
+                                class="advantages__image"
+                                src="img/index/footer/quality.png"
+                                alt="quality assurance"
+                                width="47"
+                                height="35"
+                            />
+                            <h3 class="advantages__title">Quality assurance</h3>
+                            <p class="advantages__subtitle">
+                                Worldwide delivery on all. authorit tively morph
+                                next-generation innov tion with extensive
+                                models.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="subscription">
+                <div class="container">
+                    <div class="subscription__wrap">
+                        <h2 class="visually-hidden">subscription</h2>
+                        <div class="subscription__intersect">
+                            <img
+                                class="subscription__img"
+                                src="img/index/footer/intersect.png"
+                                alt="intersect"
+                                width="96"
+                                height="96"
+                            />
+                            <div class="subscription__text">
+                                “vestibulum quis porttitor dui! quisque viverra
+                                nunc mi, a pulvinar purus condimentum“
+                            </div>
+                        </div>
+
+                        <div class="subscription__subscribe">
+                            <h3 class="subscription__title">
+                                subscribe
+                                <span class="subscription__subtitle"
+                                    >for our new letter and promotion</span
+                                >
+                            </h3>
+                            <form class="subscription__form">
+                                <input
+                                    class="input"
+                                    type="email"
+                                    placeholder="Enter Your Email"
+                                />
+                                <button class="button" type="button">
+                                    <span class="before-submit">Subscribe</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="copyright">
+                <div class="container">
+                    <h2 class="visually-hidden">copyright</h2>
+                    <div class="copyright__wrap">
+                        <p class="copyright__text">
+                            © 2021 brand all rights reserved.
+                        </p>
+                        <ul class="connection__list">
+                            <li class="connection__item">
+                                <a href="#">
+                                    <img src="img/index/footer/facebook.svg" />
+                                </a>
+                            </li>
+                            <li class="connection__item">
+                                <a href="#">
+                                    <img src="img/index/footer/instagram.svg" />
+                                </a>
+                            </li>
+                            <li class="connection__item">
+                                <a href="#">
+                                    <img src="img/index/footer/pinterest.svg" />
+                                </a>
+                            </li>
+                            <li class="connection__item">
+                                <a href="#">
+                                    <img src="img/index/footer/twitter.svg" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <script src="bootstrap/popper.min.js"></script>
+        <script src="bootstrap/bootstrap.min.js"></script> 
+
+    </body>
+
+   
+</html>

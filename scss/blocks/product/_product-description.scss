@@ -1,0 +1,45 @@
+.product-description {
+    &__wrapper {
+        display: flex;
+        min-height: 600px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 65px 150px;
+        border: $aluminum solid 1px;
+        background-color: $white;
+        margin-bottom: 128px;
+    }
+
+    &__title {
+        @include font(14px, 17px, 300);
+        color: $carmine-pink;
+        margin: 0 0 28px;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        @include font(18px, 21px, 300);
+        color: $aluminum;
+        margin: 0 0 48px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        @include font(14px, 17px, 300);
+        text-align: center;
+        color: $aluminum;
+        margin: 0 0 32px;
+    }
+
+    &__price {
+        @include font(24px, 28px, 300);
+        color: $carmine-pink;
+        margin: 0 0 65px;
+    }
+    .hr {
+        height: 1px;
+        color: $aluminum;
+        width: 100%;
+    }
+}

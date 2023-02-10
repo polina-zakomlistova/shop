@@ -1,0 +1,24 @@
+.filter__list {
+  display: grid;
+  min-height: 132px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.filter__list .filters__button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  position: relative;
+}
+.filter__list .filters__button::after {
+  content: "";
+  background-image: url(../../img/filter-arrow.svg);
+  background-size: 10px 10px;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 10px;
+}/*# sourceMappingURL=filters.css.map */
