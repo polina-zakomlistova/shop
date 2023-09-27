@@ -1,4 +1,5 @@
 .button {
+    display: block;
     text-align: center;
     max-width: 300px;
     min-height: 48px;
@@ -42,11 +43,11 @@
 }
 
 .button_grey {
-    max-width: 150px;
+    max-width: 200px;
     @include font(11px, 13px, 300);
     border: $agate-gray solid 1px;
     color: $agate-gray;
-    padding: 10px 15px;
+    padding: 10px;
     background-color: $snow-white;
 
     &:hover {

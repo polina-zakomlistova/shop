@@ -1,0 +1,105 @@
+.form-cart__wrapper {
+    display: flex;
+    flex-direction: column;
+
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .fieldset__cart {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 57px;
+
+        .legend__cart {
+            margin: 0 0 20px;
+            text-transform: uppercase;
+        }
+
+        .input__cart {
+            height: 45px;
+            width: 360px;
+            border: 1 px solid #A4A4A4;
+            padding-left: 17px;
+            margin-bottom: 20px;
+            @include font(13px, 16px, 300);
+            color: $black;
+        }
+
+        .cart-adress__button {
+            margin-top: 10px;
+            max-width: 100px;
+            min-height: 35px;
+            @include font(11px, 13px, 300);
+            text-transform: uppercase;
+            border: $agate-gray solid 1px;
+            padding: 10px 15px;
+            background-color: $snow-white;
+            text-align: center;
+        }
+    }
+
+    .total__wrapper {
+        width: 360px;
+        min-height: 215px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 43px;
+        box-sizing: border-box;
+        background-color: $smoky-white;
+
+        .sub-total-price__wrapper {
+            display: flex;
+            @include font(11px, 13px);
+            text-transform: uppercase;
+            color: $basalt-grey;
+            min-width: 170px;
+            margin: 0 0 12px;
+
+            .sub-total-price__input {
+                border: none;
+                margin-left: 20px;
+                max-width: 100px;
+            }
+        }
+
+        .total-price__wrapper {
+            display: flex;
+            @include font(16px, 19px, 300);
+            text-transform: uppercase;
+            color: $basalt-grey;
+
+            .total-price__input {
+                @include font(16px, 19px, 700);
+                color: $purplish-pink;
+                border: none;
+                margin-left: 20px;
+                max-width: 100px;
+            }
+        }
+
+        .total-link {
+            max-width: 275px;
+            min-height: 50px;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: $purplish-pink;
+            color: $white;
+            padding: 15px 40px;
+            text-align: center;
+        }
+
+        .total-price__hr {
+            margin: 21px 0 15px;
+        }
+
+    }
+}

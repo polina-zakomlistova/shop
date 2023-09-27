@@ -4,9 +4,6 @@
 @import './mixins';
 @import './general';
 
-@import '../bootstrap/bootstrap.min.css';
-@import './custom-bootstrap';
-
 @import './ui/buttons';
 @import './ui/inputs';
 
@@ -23,6 +20,8 @@
 @import './blocks/cart/cart-information';
 @import './blocks/cart/shipping-adress';
 @import './blocks/cart/cart-prices';
+@import './blocks/cart/form__cart';
+@import './blocks/cart/selected-product';
 
 @import './blocks/catalog/filters';
 @import './blocks/catalog/catalog_grid';

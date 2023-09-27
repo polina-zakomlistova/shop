@@ -10,6 +10,10 @@
         @include mobile {
             display: none;
         }
+
+        @include bigDevices {
+            width: 30%;
+        }
     }
 
     .brand__title-wrapper {
